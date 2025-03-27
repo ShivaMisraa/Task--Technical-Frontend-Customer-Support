@@ -26,8 +26,8 @@ How to Use
 
 Clone this repository:
 
-git clone https://github.com/yourusername/bundle-save-ui.git
-
+git clone [https://github.com/yourusername/bundle-save-ui.git
+](https://github.com/ShivaMisraa/Task--Technical-Frontend-Customer-Support/tree/main)
 Open index.html in a browser.
 
 Click on any bundle to select it.
@@ -56,3 +56,4 @@ This project is open-source and free to use under the MIT License.
 
 Author
 Shivam Mishra 
+https://www.linkedin.com/in/shivammishraa1/
