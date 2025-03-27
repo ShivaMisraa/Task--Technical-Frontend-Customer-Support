@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bundle & Save</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h2>YAY! It's BOGO</h2>
+
+      <!-- 1 Unit Option -->
+      <div class="bundle-option" onclick="selectBundle(1, 10)">
+        <div class="bundle-header">
+          <div class="bundle-title-container">
+            <span class="bullet"></span>
+            <span class="bundle-title">1 Unit</span>
+            <span class="discount">10% Off</span>
+          </div>
+          <div class="price-container">
+            <span class="current-price">$10.00 USD</span>
+            <span class="original-price">$24.00 USD</span>
+          </div>
+        </div>
+        <div class="size-color-section hidden" id="options-1">
+          <div class="dropdown-row">
+            <span class="item-number">#1</span>
+            <div class="dropdown-container">
+              <span class="dropdown-label">Size</span>
+              <select>
+                <option>M</option>
+                <option>S</option>
+                <option>L</option>
+              </select>
+            </div>
+            <div class="dropdown-container">
+              <span class="dropdown-label">Color</span>
+              <select>
+                <option>Black</option>
+                <option>White</option>
+                <option>Blue</option>
+              </select>
+            </div>
+          </div>
+          <div class="dropdown-row">
+            <span class="item-number">#2</span>
+            <div class="dropdown-container">
+              <span class="dropdown-label">Size</span>
+              <select>
+                <option>M</option>
+                <option>S</option>
+                <option>L</option>
+              </select>
+            </div>
+            <div class="dropdown-container">
+              <span class="dropdown-label">Color</span>
+              <select>
+                <option>Black</option>
+                <option>White</option>
+                <option>Blue</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 Unit Option (Most Popular) -->
+      <div class="bundle-option most-popular" onclick="selectBundle(2, 18)">
+        <div class="most-popular-tag">MOST POPULAR</div>
+        <div class="bundle-header">
+          <div class="bundle-title-container">
+            <span class="bullet"></span>
+            <span class="bundle-title">2 Unit</span>
+            <span class="discount">20% Off</span>
+          </div>
+          <div class="price-container">
+            <span class="current-price">$18.00 USD</span>
+            <span class="original-price">$24.00 USD</span>
+          </div>
+        </div>
+        <div class="size-color-section hidden" id="options-2">
+          <div class="dropdown-row">
+            <span class="item-number">#1</span>
+            <div class="dropdown-container">
+              <span class="dropdown-label">Size</span>
+              <select>
+                <option>M</option>
+                <option>S</option>
+                <option>L</option>
+              </select>
+            </div>
+            <div class="dropdown-container">
+              <span class="dropdown-label">Color</span>
+              <select>
+                <option>Black</option>
+                <option>White</option>
+                <option>Blue</option>
+              </select>
+            </div>
+          </div>
+          <div class="dropdown-row">
+            <span class="item-number">#2</span>
+            <div class="dropdown-container">
+              <span class="dropdown-label">Size</span>
+              <select>
+                <option>M</option>
+                <option>S</option>
+                <option>L</option>
+              </select>
+            </div>
+            <div class="dropdown-container">
+              <span class="dropdown-label">Color</span>
+              <select>
+                <option>Black</option>
+                <option>White</option>
+                <option>Blue</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 Unit Option -->
+      <div class="bundle-option" onclick="selectBundle(3, 24)">
+        <div class="bundle-header">
+          <div class="bundle-title-container">
+            <span class="bullet"></span>
+            <span class="bundle-title">3 Unit</span>
+            <span class="discount">30% Off</span>
+          </div>
+          <div class="price-container">
+            <span class="current-price">$24.00 USD</span>
+            <span class="original-price">$24.00 USD</span>
+          </div>
+        </div>
+        <div class="size-color-section hidden" id="options-3">
+          <div class="dropdown-row">
+            <span class="item-number">#1</span>
+            <div class="dropdown-container">
+              <span class="dropdown-label">Size</span>
+              <select>
+                <option>M</option>
+                <option>S</option>
+                <option>L</option>
+              </select>
+            </div>
+            <div class="dropdown-container">
+              <span class="dropdown-label">Color</span>
+              <select>
+                <option>Black</option>
+                <option>White</option>
+                <option>Blue</option>
+              </select>
+            </div>
+          </div>
+          <div class="dropdown-row">
+            <span class="item-number">#2</span>
+            <div class="dropdown-container">
+              <span class="dropdown-label">Size</span>
+              <select>
+                <option>M</option>
+                <option>S</option>
+                <option>L</option>
+              </select>
+            </div>
+            <div class="dropdown-container">
+              <span class="dropdown-label">Color</span>
+              <select>
+                <option>Black</option>
+                <option>White</option>
+                <option>Blue</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="free-shipping">Free Delivery</div>
+        <div class="total-price">Total: <span id="total">$0.00 USD</span></div>
+      </div>
+      <button class="add-to-cart" id="addToCartBtn">+ Add to Cart</button>
+      <div class="success-message" id="successMessage">
+        Added to cart successfully!
+      </div>
+    </div>
+
+    <script src="Script.Js">
+      
+    </script>
+  </body>
+</html>

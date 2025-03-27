@@ -1,0 +1,246 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    position: relative;
+    overflow: hidden;
+  }
+  h2 {
+    text-align: center;
+    color: #ff6b82;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h2::before,
+  h2::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0 10px;
+  }
+
+  .bundle-option {
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  .bundle-option.selected {
+    border-color: #ff6b82;
+    background-color: #f8f8f8;
+  }
+  .most-popular {
+    border: 2px solid #ff6b82;
+  }
+  .most-popular-tag {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background: #ff6b82;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .bundle-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .bundle-title-container {
+    display: flex;
+    align-items: center;
+  }
+  .bundle-title {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .price-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .current-price {
+    font-weight: bold;
+    color: #ff6b82;
+    font-size: 18px;
+  }
+  .original-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 14px;
+  }
+  .discount {
+    color: #ff6b82;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .size-color-section {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .dropdown-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px;
+    align-items: center;
+  }
+  .dropdown-container {
+    flex: 1;
+  }
+  .dropdown-label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    color: #666;
+  }
+  select {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: 100%;
+  }
+  .free-shipping {
+    color: #ff6b82;
+    font-size: 14px;
+    text-align: center;
+    margin: 15px 0;
+    font-weight: bold;
+  }
+  .total-price {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 15px 0;
+  }
+  .add-to-cart {
+    background: #ff6b82;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-to-cart:hover {
+    background: #ff5773;
+    transform: translateY(-2px);
+  }
+  .add-to-cart:active {
+    transform: translateY(0);
+  }
+  .bullet {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ff6b82;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+    vertical-align: middle;
+  }
+  .selected .bullet::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #ff6b82;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .hidden {
+    display: none;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 15px 0;
+  }
+  .item-number {
+    width: 20px;
+  }
+  
+  /* Ripple effect */
+  .ripple {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    transform: scale(0);
+    animation: ripple 0.6s linear;
+    pointer-events: none;
+  }
+  
+  @keyframes ripple {
+    to {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
+  
+  /* Cart icon animation */
+  .cart-icon {
+    margin-right: 8px;
+    transform: translateX(-20px);
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .add-to-cart.active .cart-icon {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  /* Success message */
+  .success-message {
+    text-align: center;
+    color: #ff6b82;
+    font-weight: bold;
+    margin-top: 10px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
+  }
+  .success-message.show {
+    height: 50px;
+  }
